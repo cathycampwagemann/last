@@ -1,16 +1,12 @@
-import torch # Si importo sólo los módulos, me sale error
-import os # Si importo sólo los módulos, me sale error
-import cv2 # Si importo sólo los módulos, me sale error
-import numpy as np # Si importo sólo los módulos, me sale error
+from os.path import join, dirname
+import cv2
+import numpy as np
+import torch
 import torch.nn as nn
-from numpy import array, ndarray, squeeze
 from PIL import Image, ImageOps
-from cv2 import imread, imwrite, resize, cvtColor, COLOR_BGR2GRAY
-from torch.utils.data import DataLoader, TensorDataset
 from torchvision import models, transforms
 from collections import OrderedDict
-from tensorflow.keras.preprocessing.image import load_img
-from tensorflow.keras.preprocessing.image import img_to_array
+from tensorflow.keras.preprocessing.image import load_img, img_to_array
 
 # Defino las funciones individuales
 
