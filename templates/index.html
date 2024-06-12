@@ -46,6 +46,11 @@
                 var respuestaElemento = document.getElementById('respuesta');
                 respuestaElemento.innerHTML = 'Resultado: <pre>' + data.respuesta + '</pre>';
             })
-            .catch(error => console.error('Error:', error));
+            .catch(error => {
+                console.error('Error al procesar la solicitud:', error);
+                // Agrega manejo de errores aquí
+            });
         }
     </script>
+</body>
+</html>
