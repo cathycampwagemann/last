@@ -63,6 +63,8 @@ def predict():
     else:
         result = "La imagen no muestra signos de neumonía."
 
+    print(f"Respuesta enviada al cliente: {result}")
+    
     return jsonify({"respuesta": result})
 
 if __name__ == '__main__':
